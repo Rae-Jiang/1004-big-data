@@ -1,0 +1,68 @@
+### Lab 5 results
+
+# [Rui Jiang]
+# [rj1407]
+
+
+# Part 1 results
+score = 0.025778332660652183
+
+# Part 2 results
+
+Overall Stats:
+Precision = 0.41989879497405547
+Recall = 0.41989879497405547
+F1 Score = 0.41989879497405547
+Weighted precision = 0.36940821320564804
+Weighted recall = 0.4198987949740555
+Weighted F1 Score = 0.35454153229411606
+Stats by class
+Class International precision = 0.48484848484848486
+Class International recall = 0.0020221169036334914
+Class International F1 Score = 0.004027436913976465
+Class Instrumental precision = 0.26990291262135924
+Class Instrumental recall = 0.002951167728237792
+Class Instrumental F1 Score = 0.005838496272183136
+Class Folk precision = 0.31362630414163767
+Class Folk recall = 0.08131147540983606
+Class Folk F1 Score = 0.12914144372843844
+Class Old-Time / Historic precision = 0.6909425625920471
+Class Old-Time / Historic recall = 0.7108333333333333
+Class Old-Time / Historic F1 Score = 0.7007468259895445
+Class Experimental precision = 0.3326935362100006
+Class Experimental recall = 0.46013253012048194
+Class Experimental F1 Score = 0.3861707506151202
+Class Jazz precision = 0.0
+Class Jazz recall = 0.0
+Class Jazz F1 Score = 0.0
+Class Hip-Hop precision = 0.329778933680104
+Class Hip-Hop recall = 0.015203836930455636
+Class Hip-Hop F1 Score = 0.029067568342025334
+Class Soul-RnB precision = 0.0
+Class Soul-RnB recall = 0.0
+Class Soul-RnB F1 Score = 0.0
+Class Blues precision = 0.0
+Class Blues recall = 0.0
+Class Blues F1 Score = 0.0
+Class Spoken precision = 0.0
+Class Spoken recall = 0.0
+Class Spoken F1 Score = 0.0
+Class Country precision = 0.0
+Class Country recall = 0.0
+Class Country F1 Score = 0.0
+Class Rock precision = 0.47532905652029644
+Class Rock recall = 0.7788763026733122
+Class Rock F1 Score = 0.5903698870075901
+Class Classical precision = 0.3361151679532652
+Class Classical recall = 0.12135593220338983
+Class Classical F1 Score = 0.1783263227806066
+Class Pop precision = 0.0
+Class Pop recall = 0.0
+Class Pop F1 Score = 0.0
+Class Easy Listening precision = 0.0
+Class Easy Listening recall = 0.0
+Class Easy Listening F1 Score = 0.0
+Class Electronic precision = 0.4178338524011907
+Class Electronic recall = 0.43199021569935514
+Class Electronic F1 Score = 0.42479412575057185
+
