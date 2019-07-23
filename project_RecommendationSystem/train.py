@@ -4,10 +4,8 @@
 Usage:
     $ module load python/gnu/3.6.5
     $ module load spark/2.4.0
-    $ spark-submit train.py hdfs:/user/bm106/pub/project/cf_validation.parquet hdfs:/user/zd415/project/pipeline 
-    $ spark-submit train.py hdfs:/user/zl2350/subset hdfs:/user/zd415/project/pipeline  or pipeline
+    $ spark-submit train.py hdfs:/user/zd415/project/subset002.parquet hdfs:/user/zd415/project/pipeline
     
-
 '''
 
 #imports
@@ -26,7 +24,7 @@ def main(spark, train_data_file, path2save_model):
     	training data (string ID)
 
     path2save_model:
-    	path to save the trained model (stringIndexers+ als)
+    	path to save the trained pipeline model (stringIndexers+ als)
     '''
 
     #Read train and val data
@@ -42,7 +40,7 @@ def main(spark, train_data_file, path2save_model):
     #Choice: handleInvalid = 'skip'/'keep'
 
     # Build the recommendation model using ALS 
-    als = ALS(maxIter=5, rank= 10, regParam=0.01, alpha = 1.0,
+    als = ALS(maxIter=10, rank= 10, regParam=0.05, alpha = 1.0,
               userCol="userId", itemCol="itemId", ratingCol="count",
               coldStartStrategy="drop",implicitPrefs=True).setSeed(0)
 

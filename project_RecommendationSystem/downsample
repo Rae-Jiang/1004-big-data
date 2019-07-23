@@ -1,0 +1,15 @@
+>>> df = spark.read.parquet("hdfs:/user/bm106/pub/project/cf_train.parquet")
+>>> df.count() 
+49824519
+
+#keep the last 110,000 rows
+>>> df1 = df.limit(49714519)
+>>> df2 = df.subtract(df1)  
+
+#random sample 2% from the rest
+>>> sample = df1.sample(False, 0.02, 0) 
+>>> subsample = sample.union(df2)
+
+>>> subsample.count()
+1103251
+>>> subsample.write.format("parquet").mode("overwrite").save("hdfs:/user/zd415/project/subset002.parquet")
